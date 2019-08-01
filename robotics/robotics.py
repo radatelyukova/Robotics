@@ -11,6 +11,6 @@ from application import *
 if __name__ == "__main__":
     log("App Starting...")
 
-#    app = Application()
+    app = Application()
     
 #    app.root.mainloop()

@@ -9,6 +9,8 @@ import sys
 import time
 from   tkinter import *
 
-class Dummy():
- def __init__(self, x):
-   self.x = x
+from config.app_config import *
+
+class Application():
+    def __init__(self):
+        config = AppConfig()

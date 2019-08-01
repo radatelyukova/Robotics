@@ -1,4 +1,4 @@
-brain:
+host:
     ip:     '192.168.2.44'
     name:   'raspberrypi'
     user:   'pi'
