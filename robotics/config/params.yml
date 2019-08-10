@@ -1,10 +1,15 @@
 host:
-    ip:     '192.168.2.44'
+    addr:   '192.168.2.44'
     name:   'raspberrypi'
     user:   'pi'
 
 button:
     gpio:   17
     
-led:
-    gpio:   27
+leds:
+    -
+        color: 'red'
+        gpio:   27
+    -
+        color: 'yellow'
+        gpio:   26
