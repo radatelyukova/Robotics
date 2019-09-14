@@ -17,6 +17,7 @@ class AppConfig():
     def __init__(self):
         params = self.read_values()
         self.initialize_host(params)
+        self.initialize_models(params)
         
     def initialize_host(self, params):
         self.addr = params['host']['addr']
@@ -25,6 +26,11 @@ class AppConfig():
 
         self.test_connection()
 
+    def initialize_models(self, params):
+        if ('leds') in params:
+            self.leds = params['leds']
+            print(self.leds)
+            
     def read_values(self, file_name='config/params.yml'):
         try:
             with open(file_name, 'r') as stream:
